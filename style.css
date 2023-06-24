@@ -1,0 +1,123 @@
+:root {
+  --primary-color: #2e2e2e;
+  --secondary-color: #f2f2f2;
+  --text-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+}
+
+#container {
+  padding: 20px;
+  text-align: center;
+}
+
+#difficultyButtons {
+  margin-bottom: 20px;
+}
+
+#difficultyButtons button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+#difficultyButtons button:hover {
+  background-color: #1bab08;
+}
+
+#loadingSpinner {
+  display: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#loadingSpinner:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#workoutRoutine {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.workout {
+  margin-bottom: 20px;
+}
+
+.workout:last-child {
+  margin-bottom: 0;
+}
+
+.workout h3 {
+  margin: 0 0 5px;
+}
+
+.workout p {
+  margin: 0;
+}
+
+.description {
+  display: none;
+  margin-top: 10px;
+}
+
+.show-description {
+  display: block;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
