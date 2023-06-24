@@ -115,6 +115,7 @@ a {
 footer {
   background-color: var(--primary-color);
   color: #fff;
+  position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
