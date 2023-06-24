@@ -6,11 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const workoutRoutineElement = document.getElementById('workoutRoutine');
 
   const beginnerWorkouts = [
-    { name: 'Plank', sets: 2, reps: 15, description: 'Hold a push-up position with your body straight.' },
+    { name: 'Push Up Plank Hold', sets: 2, reps: 15, description: 'Hold a push-up position with your body straight for 15 seconds.' },
     { name: 'Crunches', sets: 2, reps: 10, description: 'Lie on your back and lift your shoulders off the floor.' },
     { name: 'Leg Raises', sets: 2, reps: 8, description: 'Lie on your back and lift your legs up towards the ceiling.' },
     { name: 'Russian Twists', sets: 2, reps: 10, description: 'Sit on the floor and twist your torso from side to side.' },
     { name: 'Mountain Climbers', sets: 2, reps: 10, description: 'Assume a push-up position and alternate bringing your knees to your chest.' },
+    { name: 'Side Planks', sets: 2, reps: 15, description: 'Hold a side-plank for 15 seconds. One set per side.' }
   ];
 
   const intermediateWorkouts = [
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { name: 'Hanging Leg Raises', sets: 3, reps: 10, description: 'Hang from a pull-up bar and lift your legs straight up towards your chest.' },
     { name: 'Flutter Kicks', sets: 3, reps: 15, description: 'Lie on your back and kick your legs up and down without touching the ground.' },
     ...beginnerWorkouts, // Include beginner workouts
-    { name: 'Plank', sets: 2, reps: 15, description: 'Hold a push-up position with your body straight for one minute.' }, // Add one minute plank
+    { name: 'Plank', sets: 1, reps: 45, description: 'Hold a plank with your body straight for 45 seconds.' },
   ];
 
   const advancedWorkouts = [
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { name: 'Hanging Windshield Wipers', sets: 4, reps: 6, description: 'Hang from a pull-up bar and rotate your legs from side to side, touching the bar.' },
     // { name: 'Cable Woodchoppers', sets: 4, reps: 12, description: 'Attach a cable to a high pulley and perform diagonal chops, engaging your core.' },
     ...intermediateWorkouts, // Include intermediate workouts
-    { name: 'Plank', sets: 2, reps: 15, description: 'Hold a push-up position with your body straight for one minute.' }, // Add one minute plank
+    { name: 'Plank', sets: 1, reps: 60, description: 'Hold a regular plank with your body straight for one minute.' }
   ];
 
   beginnerButton.addEventListener('click', function() {
