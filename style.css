@@ -28,7 +28,10 @@ header h1 {
 
 a {
   color: #fff;
+  text-decoration: none;
 }
+
+a:link { text-decoration: none; }
 
 #container {
   flex-grow: 1; 
