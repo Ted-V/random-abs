@@ -115,9 +115,9 @@ a {
 footer {
   background-color: var(--primary-color);
   color: #fff;
-  padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
+  margin-top: 10px;
 }
